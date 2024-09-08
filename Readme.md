@@ -31,4 +31,4 @@ python3 search.py
 
 ## Demo
 
-[![asciicast](https://asciinema.org/a/bJMOlPe5F4mFLY0Rl6fiJSOp3.svg)](https://asciinema.org/a/kJBHBRpN09ZcPC4hUzjM5R9rL)
+[![asciicast](https://asciinema.org/a/l012umTq4Doq8KQK0atggrOEh.svg)](https://asciinema.org/a/l012umTq4Doq8KQK0atggrOEh)
