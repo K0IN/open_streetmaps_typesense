@@ -18,6 +18,8 @@ docker compose up
 2. Import the data into typesense (this might take a while):
 
 ```bash
+apt install osmium-tool
+pip install -r requirements.txt
 ./download-and-import.sh
 ```
 

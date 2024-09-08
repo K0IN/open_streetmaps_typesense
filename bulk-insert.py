@@ -36,7 +36,8 @@ except Exception as e:
 documents = []
 total_imported = 0
 print("Starting import")
-for line in json_stream.load(sys.stdin)['features'].persistent():
+data = json_stream.load(sys.stdin)['features'].persistent()
+for line in data:
     if line["type"] == "Feature":
         try:
             properties = line["properties"]

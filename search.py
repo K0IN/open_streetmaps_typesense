@@ -14,8 +14,7 @@ def format_hit(hit):
 
 def format_hit_with_highlight(hit):
     # Start with the original format
-    formatted = f"{hit['document']['city']} {hit['document']['postcode']} {hit['document']['housenumber']} {hit['document']['street']}"
-
+    formatted = format_hit(hit)
     # Apply highlights
     for highlight in hit.get('highlights', []):
         field = highlight['field']
@@ -62,7 +61,7 @@ class TypesenseCompleter(Completer):
                 "",
                 start_position=-len(text),
                 display=HTML(
-                    f"<ansiyellow>Took: {time.time() - start_time } Milliseconds to Search</ansiyellow>")
+                    f"<ansiyellow>Took: {time.time() - start_time } Seconds to Search</ansiyellow>")
             )
 
         except Exception as e:
